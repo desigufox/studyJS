@@ -83,8 +83,7 @@ const father = {
 }
 
 if(father.age > 40){
-  let isGym;
-  // isGym = confirm('В зал ходишь?');
+  const isGym = confirm('В зал ходишь?');
   if(isGym){
     console.log('Молодец!');
   } else {

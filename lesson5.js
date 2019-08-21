@@ -134,7 +134,6 @@ function multiplicationWithout0(a, b, errorA, errorB) {
 
 
 // function hM4(nums, work,  dN, dD){
-//   // debugger
 //   if(work === akt) {
 //     return dN(nums);
 //   } else {

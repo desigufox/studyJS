@@ -47,7 +47,8 @@ console.log(a1 / b1);
  
 let c = 15;
 let d = 2;
-console.log(result = c + d);
+let result = c + d;
+console.log(result);
 
 // 4. Создайте переменные a=10, b=2 и c=5. Выведите на экран их сумму.
 
@@ -60,12 +61,13 @@ let a2 = 17;
 let b2 = 10;
 c2 = a2 - b2;
 let d2 = 7;
-console.log(result2 =  c2 + d2);
+let result2 = c2 + d2;
+console.log(result2);
 
 // Работа со строками
 // 6. Создайте переменную str и присвойте ей значение 'Привет, Мир!'. Выведите значение этой переменной на экран.
-
-console.log(str = 'Привет, Мир!');
+let  = 'Привет, Мир!';
+console.log(str);
 
 // 7. Создайте переменные str1='Привет, ' и str2='Мир!'. С помощью этих переменных и операции сложения строк выведите на экран фразу 'Привет, Мир!'.
 
@@ -107,14 +109,14 @@ console.log(num2[0] * num2[1] * num2[2] * num2[3] * num2[4]);
 // Практика
 // 14. Напишите скрипт, который считает количество секунд в часе, в сутках, в месяце.
 
-let s = 60;
-let m = 60;
-h = m * s;
-let day = 24;
-let mon = 30;
-console.log(h * day * mon);
+let secondsInMinute = 60;
+let minutesInHour = 60;
+let secondsInHour = minutesInHour * secondsInMinute;
+let hoursInDay = 24;
+let daysInMonth = 30;
+console.log(secondsInHour, secondsInHour * hoursInDay, secondsInHour * hoursInDay * daysInMonth);
 
-// 15. Создайте три переменные - час, минута, секунда. С их помощью выведите текущее время в формате 'час:минута:секунда'.
+// 15. Создайте три переменные - час, минута, секунда. С их помощью выведите текущее время в формате 'час:минута:секунда'. 
 
 let hou = 12;
 let min = 33;
@@ -124,7 +126,7 @@ console.log(`${hou}:${min}:${seck}`);
 
 // 16. Создайте переменную, присвойте ей число. Возведите это число в квадрат. Выведите его на экран
 let l = 77;
-console.log(l = l * 2 );
+console.log(l * l);
 
 // Работа с присваиванием и декрементами
 // 17. Переделайте этот код так, чтобы в нем использовались операции +=, -=, *=, /=. Количество строк кода при этом не должно измениться.
@@ -135,9 +137,9 @@ var num3 = 47;
 // num = num / 15;
 // alert(num);
 
-// num3 +=7;
-// num3 -= 18;
-// num3 *= 10;
+num3 +=7;
+num3 -= 18;
+num3 *= 10;
 num3 /= 15;
 console.log(num3);
 
@@ -148,6 +150,7 @@ var num4 = 10;
 // num = num - 1;
 // alert(num)
 
-// num4++
+num4++
+num4++
 num4--
 console.log(num4)

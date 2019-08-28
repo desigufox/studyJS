@@ -293,4 +293,3 @@ console.log('да');
 } else {
   console.log('нет');
 }
-3

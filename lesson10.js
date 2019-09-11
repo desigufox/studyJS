@@ -15,7 +15,7 @@ console.log(result);
 if(a % b == 0){
   console.log('Делится');
 } else {
-  console.log('Делится с остатком' + ' = '+ result);
+  console.log('Делится с остатком' + ' = '+  a % b);
 }
 
 // Работа со степенью и корнем
@@ -30,9 +30,9 @@ console.log(Math.sqrt(245));
 let arr = [4, 2, 5, 19, 13, 0, 10];
 let sum =1;
 for(let i = 0; i < arr.length ; i++){
-  sum += Math.sqrt(arr[i]);
-console.log(Math.sqrt(sum));
+  sum += Math.pow(arr[i], 3);
 }
+console.log(Math.sqrt(sum));
 
 // Работа с функциями округления
 // 6. Найдите квадратный корень из 379. Результат округлите до целых, до десятых, до сотых.
@@ -44,11 +44,11 @@ console.log(sq.toFixed(2));
 
 // 7. Найдите квадратный корень из 587. Округлите результат в большую и меньшую стороны, запишите результаты округления в объект с ключами 'floor' и 'ceil'.
 
-let sq2 = Math.sqrt(578);
+let sq2 = Math.sqrt(587);
 
 let obj ={
-  'floor': '24', 
-  'ceil' : '25'
+  floor : Math.floor(sq2),
+  ceil : Math.ceil(sq2)
 }
 console.log(obj);
 
@@ -69,9 +69,9 @@ console.log(getRandomArbitary(1,100));
 
 let arr1 =[];
 for(let i = 0; i < 10; i++){
-  arr1[i] = Math.floor(Math.random() * (10 - 1 +1))+ 1;
-  console.log(arr1);
+  arr1.push(getRandomArbitary(1, 10));
 }
+  console.log(arr1);
 
 // Работа с модулем
 // Для решения задач данного блока вам понадобятся следующие методы: Math.abs.
@@ -82,10 +82,10 @@ console.log(Math.abs(a1 - b1));
 
 //  12.Даны переменные a и b. Отнимите от a переменную b и результат присвойте переменной c. Сделайте так, чтобы в любом случае в переменную c записалось положительное значение. Проверьте работу скрипта при a и b, равных соответственно 3 и 5, 6 и 1.
 
-let a2 = 6;
-let b2 = 1;
-let c = a2 - b2;
-console.log(Math.abs(c));
+let a2 = 3;
+let b2 = 5;
+let c =Math.abs(a2 - b2);
+console.log(c);
 
 
 // Задачи
@@ -95,20 +95,22 @@ let arr2 = [12, 15, 20, 25, 59, 79];
 // let arr2  = [4, 10];
 let sum1 = 0 ;
 for(let i = 0; i < arr2.length; i++){
-sum1 += arr2[i] / arr2.length;
-  console.log(sum1);
+sum1 += arr2[i];
 }
+  console.log(sum1 / arr2.length);
 
 
 //  14.Напишите скрипт, который будет находить факториал числа. Факториал (обозначается !) - это произведение (умножение) всех целых чисел, меньше данного, и его самого. Например, 4! = 1*2*3*4
 
-let arr3 = [5];
-for(let i = 0; i < 5; i++){
-arr3.push(arr3[i] - 1);
+let arr3 = [];
+let n = 5;
+for(let i = n ; i > 0; i--){
+arr3.push(i);
 }
   console.log(arr3);
+
 sum2 = 1;
 for(let i =0; i < arr3.length; i++){
   sum2 *=arr3[i];
-console.log(sum2);
 }
+console.log(sum2);
